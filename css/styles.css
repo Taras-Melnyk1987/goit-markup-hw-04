@@ -62,12 +62,19 @@ body {
 /*hero*/
 .hero {
     background-color: #2F303Acc;
+    background-image: linear-gradient(to right, #2f303a66, #2f303a66), url(../images/background-hero.jpg);
+    /*background-image: url(../images/background-hero.jpg);*/
     text-align: center;
 
-    width: 1600px;
+    max-width: 1600px;
     height: 600px;
     padding: 200px 452px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 94px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .hero-title{
     color: #ffffff;
@@ -215,11 +222,27 @@ body{
     margin-left: 305px;
 }
 .nav-info{
-    display: block;
+    display: inline-flex;
     margin-right: 30px;
 }
+.nav-info::before{
+    content: "";
+    width: 16px;
+    height: 12px;
+    background-image: url(../images/envelope.svg);
+    background-size: contain;
+    margin-right: 10px;
+}
 .nav-tel{
-    display: block;
+    display: inline-flex;
+}
+.nav-tel::before{
+    content: "";
+    width: 10px;
+    height: 16px;
+    background-image: url(../images/vector.svg);
+    background-size: contain;
+    margin-right: 10px;
 }
 
 
@@ -227,6 +250,7 @@ body{
 /*картинки в особенностях переводим в строчно-блочные*/
 .features-img{
     display: inline-block;
+    background: #F5F4FA;
     width: 270px;
     height: 120px;
     padding: 25px 70px;
@@ -247,6 +271,7 @@ body{
     width: 270px;
     height: 251px;
 }
+
 /*марджены справа*/
 .container-features:not(:last-child){
     margin-right: 30px;
@@ -293,6 +318,9 @@ body{
     height: 422px;
     padding: 0px;
     margin: 0px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: #ffffff;
 }
 .team-boxs:not(:last-child){
     margin-right: 30px;
@@ -381,6 +409,9 @@ body{
     margin-right: 30px;
     margin-bottom: 30px;
 }
+.portfolio-version:hover{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .portfolio-version:nth-child(3n){
     margin-right: 0px;
 }
@@ -390,4 +421,19 @@ body{
 .linkbox{
     margin-bottom: 20px;
 }
-
+.icon-snipp{
+    width: 44px;
+    height: 44px;
+    padding: 0px;
+    margin: 0px;
+    background-color: #ffffff;
+    fill: #AFB1B8;
+    border-radius: 50%;
+}
+.icon-snipp:hover{
+    background-color: #2196F3;
+    fill: #ffffff;
+}
+.footer-snipp{
+    background: rgba(255, 255, 255, 0.1)
+}
