@@ -16,7 +16,7 @@ body {
 }
 /*центрировать контент в секциях*/
 .container{
-    text-align: center;
+    widows: 1600px;
 }
 /*убрать точки в списках*/
 .list {
@@ -40,6 +40,9 @@ body {
 }
 .blacklogo {
     color: #000000;
+}
+.whitelogo{
+    color: #ffffff;
 }
 
 /*цвет навигации header*/
@@ -69,8 +72,6 @@ body {
     max-width: 1600px;
     height: 600px;
     padding: 200px 452px;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 94px;
     background-repeat: no-repeat;
     background-position: center;
@@ -204,6 +205,7 @@ body{
 .header{
     width: 1600px;
     padding: 24px 215px 25px;
+    border: 1px solid #ECECEC;
 }
 .header-central{
     align-items: center;
@@ -215,8 +217,11 @@ body{
 .nav-link{
     display: block;
 }
+.nav-li .acteve{
+    color: #2196F3;
+}
 .nav-li:not(:last-child){
-    margin-right: 50px;;
+    margin-right: 50px;
 }
 .auth-nav{
     margin-left: 305px;
@@ -262,8 +267,10 @@ body{
 }
 /*добавляю нижний марджен особенностям*/
 .features{
-    width: 1600px;
-    padding: 0px 215px;
+    width: 1200px;
+    padding: 0px 15px;
+    margin-left: 200px;
+    margin-right: 200px;
     margin-top: 0px;
     margin-bottom: 94px;
 }
@@ -278,8 +285,10 @@ body{
 }
 /*класс для чем мы занимаемся*/
 .work{
-    width: 1600px;
-    padding: 0px 215px;
+    width: 1200px;
+    padding: 0px 15px;
+    margin-left: 200px;
+    margin-right: 200px;
     margin-top: 0px;
     margin-bottom: 94px;
 }
@@ -344,8 +353,10 @@ body{
 }
 /*клиенты*/
 .clients{
-    width: 1600px;
-    padding: 94px 215px;
+    width: 1200px;
+    padding: 94px 15px;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 .clients-title{
     margin-bottom: 50px;
@@ -358,24 +369,39 @@ body{
     margin-right: 30px;
 }
 
-/*футео*/
+/*футер*/
 .footer-box{
     width: 1600px;
-    height: 252px;
-    padding: 0px 215px;
+    /*height: 252px;*/
+    padding: 60px 200px;
+}
+.logo-footer{
+    display: block;
+    padding: 0px;
+    margin-bottom: 20px;
 }
 .footer-address{
-    padding: 60px 69px 60px 0px;
+    display: block;
+    width: 300px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.footer-adderess:not(:last-child){
+    margin-bottom: 9px;
+}
+.color-address{
+    color: rgba(255, 255, 255, 0.6);
 }
 .footer-social{
-    padding: 72px 94px 100px 0px;
+    width: 300px;
+    padding: 0px 15px;
 }
 .contact-icon:not(:last-child){
-    margin-right: 22px;
+    margin-right: 10px;
 }
 .footer-button{
-    padding-top: 72px;
-    padding-bottom: 94px;
+    width: 600px;
+    padding: 0px 15px;
 }
 .footer-contact{
     margin: 0px;
@@ -384,8 +410,8 @@ body{
 
 /*портфолио*/
 .portfolio-magabox{
-    width: 1170px;
-    padding: 94px 0px;
+    width: 1200px;
+    padding: 94px 15px;
     margin-left: auto;
     margin-right: auto;
 }
