@@ -121,7 +121,15 @@ body {
     margin-bottom: 10px;
     text-align: center;
 }
+/*h3*/
 .features-title {
+    color: #212121;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+
+    margin-top: 0px;
+    margin-bottom: 10px;
     font-size: 14px;
     line-height: 1.14;
 }
@@ -254,12 +262,18 @@ body{
 
 /*картинки в особенностях переводим в строчно-блочные*/
 .features-img{
-    display: inline-block;
+    display: flex;
     background: #F5F4FA;
     width: 270px;
     height: 120px;
-    padding: 25px 70px;
     margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.features-icon{
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 /*убираю марджен с текста в особенностях*/
 .features-text{
@@ -362,11 +376,27 @@ body{
     margin-bottom: 50px;
 }
 .clients-box{
+    display: flex;
     width: 170px;
     height: 90px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
 }
 .clients-box:not(:last-child){
     margin-right: 30px;
+}
+.icon-clients{
+    padding: 0px;
+    margin: 0px;
+    background-color: #ffffff;
+    fill: #AFB1B8;
+}
+.icon-clients:hover{
+    background-color: #ffffff;
+    fill: #2196F3;;
 }
 
 /*футер*/
