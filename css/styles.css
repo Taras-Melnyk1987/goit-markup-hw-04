@@ -15,8 +15,10 @@ body {
     width: 1600px;
 }
 /*центрировать контент в секциях*/
-.container{
+div.container{
     widows: 1600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 /*убрать точки в списках*/
 .list {
@@ -211,7 +213,6 @@ body{
 }
 /*хедер*/
 .header{
-    width: 1600px;
     padding: 24px 215px 25px;
     border: 1px solid #ECECEC;
 }
@@ -401,8 +402,8 @@ body{
 
 /*футер*/
 .footer-box{
-    width: 1600px;
-    /*height: 252px;*/
+    /*width: 1600px;
+    height: 252px;*/
     padding: 60px 200px;
 }
 .logo-footer{
