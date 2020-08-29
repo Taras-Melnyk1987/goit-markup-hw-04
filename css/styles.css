@@ -166,12 +166,16 @@ footer{
 }
 /* цвет button-portfolio */
 .button-portfolio{
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 6px 22px;
     background-color: #f5f4fa;
     color: #212121;
     font-family: Roboto, sans-serif;
     font-size: 16px;
     line-height: 1.63;
     letter-spacing: 0.03em;
+    cursor: pointer;
 }
 /*ховер и фокус button-portfolio*/
 .button-portfolio:hover,
@@ -392,7 +396,7 @@ header{
     box-sizing: border-box;
     border-radius: 4px;
 }
-.clients-box:not(:last-child){
+.clients-margin:not(:last-child){
     margin-right: 30px;
 }
 .icon-clients{
@@ -403,9 +407,11 @@ header{
 }
 .icon-clients:hover{
     background-color: #ffffff;
-    fill: #2196F3;;
+    fill: #2196F3;
 }
-
+.clients-box:hover{
+    border-color: #2196F3;
+}
 /*футер*/
 
 .logo-footer{
