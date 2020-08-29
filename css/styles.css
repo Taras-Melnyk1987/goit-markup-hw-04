@@ -15,10 +15,12 @@ body {
     width: 1600px;
 }
 /*центрировать контент в секциях*/
-div.container{
-    widows: 1600px;
+.container{
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 /*убрать точки в списках*/
 .list {
@@ -71,8 +73,8 @@ div.container{
     /*background-image: url(../images/background-hero.jpg);*/
     text-align: center;
 
-    max-width: 1600px;
-    height: 600px;
+    /*max-width: 1600px;
+    height: 600px;*/
     padding: 200px 452px;
     margin-bottom: 94px;
     background-repeat: no-repeat;
@@ -143,13 +145,15 @@ div.container{
 }
 
 /*цвет футер*/
-.footer {
+footer{
     background-color: #2F303A;
     color: #ffffff;
     font-family: Roboto, sans-serif;
     font-size: 14px;
     line-height: 1.41;
     letter-spacing: 0.03em;
+    /*width: 1600px;*/
+    padding: 60px 200px;
 
 }
 /* цвет button-portfolio */
@@ -212,9 +216,14 @@ body{
     margin: 0px;
 }
 /*хедер*/
-.header{
-    padding: 24px 215px 25px;
+header{
+    padding-right: 200px;
+    padding-left: 200px;
     border: 1px solid #ECECEC;
+}
+.header{
+    padding: 24px 15px 25px;
+    align-items: center;
 }
 .header-central{
     align-items: center;
@@ -282,10 +291,7 @@ body{
 }
 /*добавляю нижний марджен особенностям*/
 .features{
-    width: 1200px;
-    padding: 0px 15px;
-    margin-left: 200px;
-    margin-right: 200px;
+    padding: 0px 200px;
     margin-top: 0px;
     margin-bottom: 94px;
 }
@@ -300,10 +306,7 @@ body{
 }
 /*класс для чем мы занимаемся*/
 .work{
-    width: 1200px;
-    padding: 0px 15px;
-    margin-left: 200px;
-    margin-right: 200px;
+    padding: 0px 200px;
     margin-top: 0px;
     margin-bottom: 94px;
 }
@@ -328,10 +331,7 @@ body{
 
 /*наша жизнь*/
 .team{
-    width: 1600px;
-    /*height: 702px;*/
-    padding: 94px 215px;
-    margin: 0px;
+    padding: 94px 200px;
     background: #F5F4FA;
 }
 .team-title{
@@ -368,10 +368,8 @@ body{
 }
 /*клиенты*/
 .clients{
-    width: 1200px;
-    padding: 94px 15px;
-    margin-left: 200px;
-    margin-right: 200px;
+    /*width: 1200px;*/
+    padding: 94px 200px;
 }
 .clients-title{
     margin-bottom: 50px;
@@ -401,11 +399,7 @@ body{
 }
 
 /*футер*/
-.footer-box{
-    /*width: 1600px;
-    height: 252px;*/
-    padding: 60px 200px;
-}
+
 .logo-footer{
     display: block;
     padding: 0px;
