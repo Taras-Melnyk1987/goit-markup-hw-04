@@ -443,8 +443,7 @@ header{
 
 /*портфолио*/
 .portfolio-magabox{
-    width: 1200px;
-    padding: 94px 0px;
+    padding: 94px 200px;
     margin-left: auto;
     margin-right: auto;
 }
